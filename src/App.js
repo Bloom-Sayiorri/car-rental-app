@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -11,12 +11,12 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar />
-      <Router>
-        <Route exact path='/home' component={<Home />} />
-        <Route exact path='/signup' component={<Signup />} />
-        <Route exact path='/login' component={<Login />} />
-        <Route exact path='/about' component={<About />} />
-      </Router>
+      <Routes>
+        <Route exact path='/' component={<Home />} />
+        <Route path='/signup' component={<Signup />} />
+        <Route path='/login' component={<Login />} />
+        <Route path='/about' component={<About />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   );
