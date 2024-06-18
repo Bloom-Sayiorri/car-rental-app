@@ -1,3 +1,7 @@
 .footer {
-    background-color: aqua;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
 }
