@@ -4,13 +4,14 @@
     align-items: center;
     width: 100%;
     margin-top: auto;
+    /* position: fixed;
+    bottom: 0; */
     background: transparent;
-}
-
-.column {
-
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .socials {
-
+    display: flex;
+    gap: 8px;
 }

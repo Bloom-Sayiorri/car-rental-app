@@ -12,7 +12,7 @@
   height: 100%;
  }
 
-body {
+.App {
   color: var(--text);
   margin: 0;
   padding: 0;
