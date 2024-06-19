@@ -1,0 +1,41 @@
+.container {
+    /* min-height: 100vh; */
+    min-width: 600px;
+    min-height: 100vh;
+    color: white;   
+}
+
+.form {
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    max-width: 600px;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+label, input {
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+input {
+    border: 2px solid black;
+}
+
+
+
+.button {
+    color: white;
+    background-color: rgb(4, 148, 49);
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+}
