@@ -12,7 +12,7 @@ const Navbar = ({ handleTheme }) => {
   return (
     <header className='header'>
       <div className='logo'>
-        <img src={logo} alt="Logo" height={27} width={27} className="logo-img"/>
+        <img src={logo} alt="Logo" className="logo-img"/>
         <p className='logo-text'>Car Rental App</p>
       </div>
       <nav className='nav'>

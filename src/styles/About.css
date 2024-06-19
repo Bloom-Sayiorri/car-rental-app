@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    height: 500px;
+    width: 500px;
+}
+
+.texts {
+    height: 600px;
+    width: 300px;
+    text-overflow: hidden;
+    overflow: wrap;
+}
+
+.company {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info, .mission-text {
+
+}
+
+.mission-header {
+    font-size: 1em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}

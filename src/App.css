@@ -8,11 +8,21 @@
   --header: #0b0544;
 }
 
-* {
+ html {
+  height: 100%;
+ }
+
+body {
   color: var(--text);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,7 +1,16 @@
 .footer {
-    background: transparent;
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    background: transparent;
+}
+
+.column {
+
+}
+
+.socials {
+
 }

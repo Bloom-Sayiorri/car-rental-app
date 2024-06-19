@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className="row">
         <div className='column'>
           <p className='text'>&copy; Car Rental Inc @ 2024.</p>
-          <div className='rule'>r</div>
-          <ul className='socials'>
+          {/* <div className='rule'>r</div> */}
+        </div>
+        <div className='socials'>
+          <ul className='links'>
             <Link className='icons'>
               <FaInstagram/>
             </Link>
@@ -22,7 +23,6 @@ const Footer = () => {
             </Link>
           </ul>
         </div>
-      </div>
     </div>
   )
 }

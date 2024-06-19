@@ -1,17 +1,29 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    /* background-color: var(--header); */
+    padding: 10px;
 }
 
 .logo {
     display: flex;
+    align-items: center;
     gap: 10px;
+    padding-bottom: -10px;
+}
+
+.logo-img {
+    height: 30px;
+    width: 30px;
 }
 
 .logo-text {
     /* background-gradient: from(); */
+    /* display: block; */
+    /* font-size: 1.5em;    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
 }
 
 .nav {

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
@@ -15,17 +15,19 @@ function App() {
   const handleTheme = () => {
     setDark(!dark);
   };
-
+// {`App ${dark} ? "bg-dark" : "bg-bg"`}
   return (
-    <div className={`${dark} ? "bg-dark" : "bg-bg"`}>
+    <div className="App">
       <Navbar handleTheme={handleTheme}/>
+      <div className="main">
         <Routes>
-          <Route exact path='/' component={<Home />} />
-          <Route path='/signup' component={<Signup />} />
-          <Route path='/login' component={<Login />} />
-          <Route path='/about' component={<About />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/about' element={<About />} />
         </Routes>
-      {/* <Footer /> */}
+      </div>
+      <Footer />
     </div>
   );
 }
