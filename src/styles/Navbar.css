@@ -1,8 +1,25 @@
 .header {
     display: flex;
-
+    justify-content: space-between;
+    margin: 10px;
+    /* background-color: var(--header); */
 }
 
 .logo {
+    display: flex;
+    gap: 10px;
+}
+
+.logo-text {
+    /* background-gradient: from(); */
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.navlinks {
+    text-decoration: none;
     
 }

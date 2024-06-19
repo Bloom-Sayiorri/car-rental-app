@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -8,17 +9,24 @@ import Login from './pages/Login';
 import About from './pages/About';
 
 function App() {
+
+  const [ dark, setDark ] = useState(false);
+
+  const handleTheme = () => {
+    setDark(!dark);
+  };
+
   return (
-    <BrowserRouter>
-    <Navbar />
-      <Routes>
-        <Route exact path='/' component={<Home />} />
-        <Route path='/signup' component={<Signup />} />
-        <Route path='/login' component={<Login />} />
-        <Route path='/about' component={<About />} />
-      </Routes>
+    <div className={`${dark} ? "bg-dark" : "bg-bg"`}>
+      <Navbar handleTheme={handleTheme}/>
+        <Routes>
+          <Route exact path='/' component={<Home />} />
+          <Route path='/signup' component={<Signup />} />
+          <Route path='/login' component={<Login />} />
+          <Route path='/about' component={<About />} />
+        </Routes>
       {/* <Footer /> */}
-    </BrowserRouter>
+    </div>
   );
 }
 
